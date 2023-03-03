@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="php" href="form.php">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="get" action="form.php">
+        <fieldset><legend>Formulário</legend>
+
+            <div class="field">
+                <label for="nome">Seu nome completo:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome completo:">
+            </div>
+           
+            <div class="field">
+                <label for="email">Seu e-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail:">
+            </div>
+
+            <div class="field">
+                <label for="telefone">Seu telefone:</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone:">
+            </div>
+
+            <div class="field">
+                <label for="nome">Sua data de nascimento:</label>
+                <input type="date" name="ano">
+            </div>
+            
+            <div class="field">
+                <input type="radio" name="sexo" id="masc" value="masculino" >
+                <label for="masc">Masculino</label>
+
+                <br>
+                <input type="radio" name="sexo" id="fem" value="feminino">
+                <label for="fem">Feminino</label>
+            </div>
+
+                <div class="field radiobox">
+                    <span>Deseja receber nossas novidades?</span>
+                    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                    <input type="radio" name="novidades" id="nao"><label for="nao">Não</label>
+                </div>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
